@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arfanvn - WebRTC Meeting</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
@@ -364,6 +365,28 @@
             </div>
         </div>
     </div>
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> Nama Anda. All Rights Reserved.</p>
+    </footer>
+    
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    
+    <style>
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #222; /* Warna latar */
+            color: white; /* Warna teks */
+            text-align: center;
+            font-size: 12px; /* Ukuran teks kecil */
+            padding: 5px;
+        }
+    </style>
+    
 
     <script>
 
